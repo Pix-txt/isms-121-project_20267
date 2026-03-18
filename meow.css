@@ -1,0 +1,48 @@
+.centertext{
+    text-align:center;
+    
+    padding-bottom: 450px;
+}
+
+.offcenterslightleft{
+    text-align:center;
+    padding-bottom: 450px;
+    padding-right: 100px;
+}
+
+.offcenterleft{
+    text-align:center;
+    padding-bottom: 450px;
+    padding-right: 500px;
+}
+
+.offcenterright{
+    text-align:center;
+    padding-bottom: 450px;
+    padding-left: 500px;
+}
+
+.textcontain{
+    font-family:'Courier New', Courier, monospace;
+    margin-top: 50px;
+    color:white;
+}
+
+.textcontain2{
+    font-family:'Courier New', Courier, monospace;
+    margin-top: 50px;
+    color:white;
+    display: flex;
+}
+
+.twotexts{
+    text-align:center;
+    width:50%;
+    margin-bottom: 450px;
+}
+
+.threetexts{
+    text-align:center;
+    width:33%;
+    margin-bottom: 450px;
+}
