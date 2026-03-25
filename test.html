@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: goldenrod;
+                color: blueviolet;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: bolder;
+                text-align: center;
+            }
+        </style>
+        <title>Button</title>
+    </head>
+
+    <body>
+        
+        <button id ='btn' style="background: transparent;outline: none; border: none;"><img src='C:\Users\ISMS\Documents\chipsandbiscuits\potat-removebg-preview.png'></button>
+        <p>You have clicked the potato <span id= 'num'>0</span> times</p>
+        <button id="finished" style="background-color: chocolate; outline:none;font-weight: bolder;">Click here once you're tired</button>
+
+        <script>
+            let count=0;
+            let btn = document.getElementById('btn');
+            let number = document.getElementById('num');
+
+            btn.onclick = function () {
+                count++;
+                number.innerHTML = count;
+            }
+
+            let finished = document.getElementById('finished')
+
+            finished.onclick = function () {
+                alert('You clicked the potato '+count+" times :D")
+            }
+        </script>
+    </body>
+</html>

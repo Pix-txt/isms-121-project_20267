@@ -1,15 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title>ISM 121 CatPhoto App</title>
+        <title>My Form</title>
     </head>
 
-    <body>
-        <main>
-            <section>
-                <h2>Cat photos</h2>
-                <p>See more</p>
-            </section>
-        </main>
+    <body style="background-color: black; color: white;; text-align: center;">
+        <h1>Form</h1>
+        <fieldset>
+            <legend>Super cool form fr fr</legend>
+            <form id ='myForm'>
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter your super peak and kawaii name" name="username" id="username" required>
+                <br>
+                <label for="Colour">Colours</label>
+                <input list="Colours" id="Colour" name="Colour">
+                <datalist id="Colours" aria-placeholder="Choose a colour">
+                    <option value="Red">
+                    <option value="Blue">
+                    <option value="Yellow">
+                    <option value="Green">
+                </datalist>
+                <br>
+                <button onclick="Showname()">Submit</button>
+                <button onclick="meow.html">Leave</button>
+            </form>
+        </fieldset>
+
+        <script>
+            function Showname(){
+                if(x==1){
+                    alert("Hello "+document.getElementById('myForm').elements[0].value+"!"+"This is the "+ x + "st time that you have clicked the submit button")
+                }
+                else if(x==2){
+                    alert("Hello "+document.getElementById('myForm').elements[0].value+"!"+"This is the "+ x + "nd time that you have clicked the submit button")
+                }
+                else if(x==3){
+                    alert("Hello "+document.getElementById('myForm').elements[0].value+"!"+"This is the "+ x + "rd time that you have clicked the submit button")
+                }
+                else{
+                    alert("Hello "+document.getElementById('myForm').elements[0].value+"!"+"This is the "+ x + "th time that you have clicked the submit button")
+                }
+                x+=1
+            }
+            let x=1
+            
+        </script>
     </body>
 </html>
