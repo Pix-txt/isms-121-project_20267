@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(12, 170, 46);
+    font-family: monospace;
+    text-align: center;
+    padding-top: 40px;
+}
+
+input, button{
+    background-color: rgb(12, 170, 46);
+    color: black;
+    font-family: monospace;
+    border-radius: 50px;
+    width: 100px;
+}
+
+input:hover, button:hover{
+    background-color: rgb(10, 128, 35);
+}
+
+label{
+    font-size: large;
+    font-weight: bold;
+}
+
+#Clock{
+    font-size: 64px;
+    font-weight: bolder;
+}
+
+#Clock:hover{
+    color: rgb(10, 128, 35);
+}

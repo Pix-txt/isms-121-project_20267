@@ -27,6 +27,9 @@
             btn.onclick = function () {
                 count++;
                 number.innerHTML = count;
+                if(count==1000){
+                    alert('You clicked 1000 times!!! Congrats :D')
+                }
             }
 
             let finished = document.getElementById('finished')
