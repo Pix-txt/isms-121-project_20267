@@ -1,0 +1,79 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    color: rgb(68, 26, 77);
+    background-color: rgb(219, 238, 151);
+    align-content: center;
+    text-align: center;
+}
+
+#Vault{
+    color: rgb(222, 233, 255);
+    background-color: rgb(33, 4, 66);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    width:60%;
+    height:75%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 30px;
+    outline-color: rgb(255, 217, 0);
+    outline-width: 5px;
+}
+
+button{
+    border-radius: 12px;
+    font-family: monospace;
+    background-color: rgb(144, 171, 224);
+}
+
+button:hover{
+    border-radius: 12px;
+    font-family: monospace;
+    background-color: rgb(105, 128, 175);
+}
+
+#red{
+    background-color: rgb(202, 69, 69);
+}
+
+#red:hover{
+    background-color: rgb(129, 26, 26);
+}
+
+#blue{
+    background-color: rgb(69, 122, 202);
+}
+
+#blue:hover{
+    background-color: rgb(30, 43, 119);
+}
+
+#yellow{
+    background-color: rgb(222, 224, 78);
+}
+
+#yellow:hover{
+    background-color: rgb(136, 134, 31);
+}
+
+#green{
+    background-color: rgb(66, 201, 95);
+}
+
+#green:hover{
+    background-color: rgb(34, 121, 53);
+}
+
+#Codeconfirmation{
+    border-radius: 4px;
+    font-family: monospace;
+    background-color: rgb(105, 128, 175);
+}
+
+#Codeconfirmation:hover{
+    border-radius: 4px;
+    font-family: monospace;
+    background-color: rgb(89, 109, 151);
+}
+

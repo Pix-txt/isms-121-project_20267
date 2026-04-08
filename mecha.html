@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            What are we doing
+        </title>
+        <link href="C:\Users\ISMS\Documents\chipsandbiscuits\isms-121-project_20267\mecha.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <h1>Vault</h1>
+    
+        <span id='d'><img src="C:\Users\ISMS\Documents\chipsandbiscuits\potat-removebg-preview.png"></span>
+        <div id="Vault">
+        <br><br>
+        <button id="red">Red</button>
+        <button id="blue">Blue</button>
+        <button id="yellow">Yellow</button>
+        <button id="green">Green</button>
+        <br>
+        <p>Entered code: <span id = 'codedisplay'>blank</span> </p>
+        
+        <label for ='Codeconfirmation'>Confirm old code to save a new code</label> <input type="text" id="Codeconfirmation" name="Codeconfirmation">
+        <br>
+        <button id="create">Save new code</button>
+        <br><br>
+        <button id="backspace">Backspace</button>
+        <button id="deletes">Clear</button>
+        <button id="enter">Confirm your code</button>
+        <br>
+        <p id="message">There is no current code</p>
+        </div>
+        <script>
+            let iscodeentered = false;
+            let loggedin = false;
+            let diary = 'Woah you found my secret stash';
+            let currentcode = [];
+            let enteredcode = [];
+
+            red = document.getElementById('red');
+            blue = document.getElementById('blue');
+            green = document.getElementById('green');
+            yellow = document.getElementById('yellow');
+
+            create = document.getElementById('create');
+            deletes = document.getElementById('deletes');
+            backspace = document.getElementById('backspace');
+            enter = document.getElementById('enter');
+
+            codeconfirmation = document.getElementById('Codeconfirmation');
+
+            codedisplay = document.getElementById('codedisplay');
+            message = document.getElementById('message');
+            d = document.getElementById('d');
+
+            red.onclick = function(){
+                enteredcode.push('red');
+                codedisplay.innerHTML = enteredcode.toString();
+            }
+
+            blue.onclick = function(){
+                enteredcode.push('blue');
+                codedisplay.innerHTML = enteredcode.toString();
+            }
+
+            green.onclick = function(){
+                enteredcode.push('green');
+                codedisplay.innerHTML = enteredcode.toString();
+            }
+
+            yellow.onclick = function(){
+                enteredcode.push('yellow');
+                codedisplay.innerHTML = enteredcode.toString();
+            }
+
+            backspace.onclick = function(){
+                enteredcode.length = enteredcode.length - 1;
+                codedisplay.innerHTML = enteredcode.toString();
+            }
+
+            create.onclick = function(){
+                if (iscodeentered==false){
+                    if (enteredcode.length > 0){
+                        currentcode.length = 0;
+                        currentcode = enteredcode.slice();
+                        enteredcode.length = 0;
+                        codedisplay.innerHTML = enteredcode.toString();
+                        message.innerHTML = 'Code has been saved';
+                        iscodeentered = true;
+                    }
+                    else{
+                        message.innerHTML = 'No code is entered'
+                    }
+                }
+                else{
+                    if (enteredcode.length > 0 && document.getElementById('Codeconfirmation').value == currentcode.toString()){
+                        currentcode.length = 0;
+                        currentcode = enteredcode.slice();
+                        enteredcode.length = 0;
+                        codedisplay.innerHTML = enteredcode.toString();
+                        message.innerHTML = 'Code has been saved';
+                        iscodeentered = true;
+                    }
+                    else{
+                        message.innerHTML = 'Invalid Code';
+                }
+            }
+        }
+
+            deletes.onclick = function(){
+                enteredcode.length = 0;
+                codedisplay.innerHTML = enteredcode.toString();
+            }
+
+            enter.onclick = function(){
+                if(enteredcode.toString() == currentcode.toString() ){
+                    message.innerHTML = 'Code is correct';
+                    loggedin = true;
+                    if(loggedin == true){
+                        d.innerHTML = diary;
+                    }
+                }
+                else{
+                    message.innerHTML = 'Code does not match';
+                }
+            }
+
+            
+
+        </script>
+    </body>
+</html>
