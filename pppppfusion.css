@@ -1,0 +1,74 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: linear-gradient(to bottom, rgb(192, 241, 241), rgb(86, 147, 204));
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+h1:hover{
+    color: rgb(56, 34, 95);
+}
+
+button{
+    border-radius: 10vw;
+    font-size: 130%;
+    font-weight: bold;
+    background-color: crimson;
+    color: aliceblue;
+    border-style: none;
+    bottom: 0px;
+    position: relative;
+    transition: bottom 1s ease;
+}
+
+button:hover{
+    background-color: brown;
+    bottom: 5px;
+}
+
+#results{
+    padding: 20px;
+    border-radius: 2vw;
+    border-style:groove;
+    width: 3vw;
+    height: 3vw;
+    margin: auto;
+    margin-top: 20px;
+    background-color: aliceblue;
+    font-size: 2vw;
+    bottom : 0px;
+    position: relative;
+    transition: bottom 1s ease;
+}
+
+#results:hover, #results2:hover{
+    bottom: 2px;
+}
+
+#results2{
+    margin: auto;
+    margin-top: 20px;
+    bottom : 0px;    
+    position: relative;
+    transition: bottom 1s ease;
+    border-color: rgb(88, 86, 44);
+    background-color: rgb(124, 118, 37) ;
+    border-radius: 100%;
+    border-width: 2px;
+    width: 9.8vw;
+    height:9.8vw;
+    border-style: solid;
+}
+
+
+#results2 img{
+    width: 10vw;
+    height: fit-content;
+    align-self: center;
+    justify-self: center;
+    margin-left: -2px;
+}

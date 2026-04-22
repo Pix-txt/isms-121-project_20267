@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Deco27</title>
+        <link href="pppppfusion.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Dice roller</h1>
+        <button id="sixsided">Roll a d6</button>
+        <button id="eightsided">Roll a d8</button>
+        <button id="twelvesided">Roll a d12</button>
+        <button id="twentysided">Roll a d20</button>
+        <p id="results"></p>
+        <br><br>
+        <button id = 'coin'>Flip a coin</button>
+        <p id="results2"></p>
+
+
+        <script>
+            let six = document.getElementById('sixsided');
+            let eight = document.getElementById('eightsided');
+            let twelve = document.getElementById('twelvesided');
+            let twenty = document.getElementById('twentysided');
+            let results = document.getElementById('results');
+
+            let flipcoin = document.getElementById('coin');
+            let results2 = document.getElementById('results2')
+            let rand = 0;
+
+            six.onclick = function () {
+                rand = Math.floor((Math.random() * 6)+1);
+                results.innerHTML = rand
+            }
+
+            eight.onclick = function () {
+                rand = Math.floor((Math.random() * 8)+1);
+                results.innerHTML = rand
+            }
+
+            twelve.onclick = function () {
+                rand = Math.floor((Math.random() * 12)+1);
+                results.innerHTML = rand
+            }
+
+            twenty.onclick = function () {
+                rand = Math.floor((Math.random() * 20)+1);
+                results.innerHTML = rand
+            }
+
+            flipcoin.onclick = function(){
+                rand = Math.floor((Math.random() * 2)+1);
+
+                if(rand == 1){
+                    let pic = '<img src="coinhead-removebg-preview.png">';
+                    results2.innerHTML = pic;
+                }
+                else{
+                    let pic = '<img src = "cointail-removebg-preview.png">'
+                    results2.innerHTML = pic;
+                }
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+button{
+    border-radius: 100%;
+    border-width: 10px;
+    width: 15vw;
+    height: 15vw;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    bottom: 0px;
+    transition: bottom 1s ease, width 1s ease, height 1s ease, background-color 1s ease, border-color 1s ease;
+    border-color: cornflowerblue;
+}
+
+button:hover{
+    bottom: 10px;
+    width: 17vw;
+    height: 17vw;
+    background-color: rgb(222, 227, 233);
+    border-color: rgb(79, 112, 202);
+}
+
+button img{
+    width: 10vw;
+    height: fit-content;
+}
+
+:root{
+    background-image: linear-gradient(to bottom, rgb(224, 244, 255), rgb(139, 184, 209));
+    min-height: 100vh;
+}
+
+body{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    margin-top: 24vh;
+    font-weight: bolder;
+    color: aliceblue;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0),rgb(87, 89, 211),rgb(87, 89, 211, 0));
+    bottom: 0px;
+    position: relative;
+    transition: color 1s ease, bottom 1s ease, font-size 1s ease;
+}
+
+h1:hover{
+    color: rgb(239, 215, 250);
+    bottom: 5px;
+    font-size: 38px;
+}
