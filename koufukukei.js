@@ -34,20 +34,20 @@ function calculate(){
 
     switch(currentOpp){
         case '+':
-            result = cur + prev;
+            result = prev + cur;
             break;
         case '-':
-            result = cur - prev;
+            result = prev - cur;
             break;
         case '*':
-            result = cur * prev;
+            result = prev * cur;
             break;
         case '/':
             if(cur == 0 || prev == 0){
                 result = 'you cannot divide by 0 :p';
                 break;
             }
-            result = cur/prev;
+            result = prev/cur;
             break;
         default:
             return;
