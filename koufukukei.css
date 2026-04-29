@@ -1,0 +1,97 @@
+body{
+    padding-top: 10vh;
+    font-family: monospace;
+    background-color: rgb(92, 151, 190);
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+}
+
+#allbox{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin:auto;
+    background-color: rgb(173, 183, 190);
+    border-radius: 1vh;
+    padding: 2vh;
+    border-style: ridge;
+    border-width: 0.5vw;
+    border-color: rgb(94, 99, 105);
+    box-shadow: 3px 3px 40px rgb(141, 223, 255);
+    bottom: 0px;
+    position: relative;
+    transition: bottom 1s ease;
+}
+
+#allbox:hover{
+    bottom: 10px
+}
+
+#workbox{
+    background-color: rgb(125, 172, 146);
+    width: 85%;
+    height: 10vh;
+    border-radius: 1.5vh;
+    margin: auto;
+    border-width: 1vw;
+    border-color: rgb(19, 99, 72);
+    border-style: groove;
+    padding-left: 5%;
+    padding-top: 4%;
+    overflow-x:auto;
+    overflow-y: hidden;
+    text-wrap-mode:nowrap;
+    scrollbar-color: rgb(19, 99, 72) rgb(125, 172, 146);
+}
+
+#workbox span{
+    color: rgb(16, 65, 48);
+    font-size: 400%;
+}
+
+#calcbox{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    padding-top: 2vh;
+    align-content: center;
+    justify-content: center;
+}
+
+#numbox button{
+    width: 30%;
+    height: 5vh;
+    margin-bottom: 1vh;
+    font-size: 200%;
+}
+
+button{
+    background-color: rgb(227, 232, 238);
+    color: rgb(80, 79, 90);
+    transition: background-color ease 0.5s;
+    border-radius: 1vh;
+    border-color: rgb(167, 167, 167);
+}
+
+button:hover{
+    background-color: rgb(203, 211, 218);
+    color: rgb(55, 54, 65);
+}
+
+#operators{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#operators button{
+    width: 70%;
+    margin: auto;
+    border-radius: 1vh;
+    height: 4vh;
+    font-size: 150%;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link href="koufukukei.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+
+        <h1>The Ancient Calculator</h1>
+
+        <div id="allbox">
+
+            <div id="workbox">
+                <span id="display">touch me if you dare >:3</span>
+            </div>
+
+            <div id="calcbox">
+
+                <div id="numbox">
+                    <button id="one" onclick="appendnumber('1')">1</button>
+                    <button id="two" onclick="appendnumber('2')">2</button>
+                    <button id="three" onclick="appendnumber('3')">3</button>
+                    <button id="four" onclick="appendnumber('4')">4</button>
+                    <button id="five" onclick="appendnumber('5')">5</button>
+                    <button id="six" onclick="appendnumber('6')">6</button>
+                    <button id="seven" onclick="appendnumber('7')">7</button>
+                    <button id="eight" onclick="appendnumber('8')">8</button>
+                    <button id="nine" onclick="appendnumber('9')">9</button>
+                    <button id="decimal" onclick="appendnumber('.')">.</button>
+                    <button id="zero" onclick="appendnumber('0')">0</button>
+                    <button id="equals" onclick="calculate()">=</button>
+                </div>
+
+                <div id="operators">
+                    <button id="plus" onclick="appendoperator('+')">+</button>
+                    <button id="minus" onclick="appendoperator('-')">-</button>
+                    <button id="product" onclick="appendoperator('*')">*</button>
+                    <button id="divide" onclick="appendoperator('/')">/</button>
+                    <button id="clear" onclick="clearscreen()">cc</button>
+                </div>
+
+            </div>
+
+        </div>
+
+            <script src="koufukukei.js"></script>
+    </body>
+</html>
