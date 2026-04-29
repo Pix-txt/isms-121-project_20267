@@ -43,6 +43,10 @@ function calculate(){
             result = cur * prev;
             break;
         case '/':
+            if(cur == 0 || prev == 0){
+                result = 'you cannot divide by 0 :p';
+                break;
+            }
             result = cur/prev;
             break;
         default:
